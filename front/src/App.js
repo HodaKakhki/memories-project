@@ -9,7 +9,7 @@ const App = () => {
   const classes = useStyles();
   return (
     <>
-      <Container maxWidth="100%">
+      <Container maxWidth="lg">
         <AppBar className={classes.appBar} position="static" color="inherit">
           <Typography className={classes.heading} variant="h2" align="center">
             Memories
@@ -21,7 +21,7 @@ const App = () => {
             <Grid
               container
               justifyContent="space-between"
-              alignItems="streatch"
+              alignItems="center"
               spacing={3}
             >
               <Grid item xs={12} sm={7}>
