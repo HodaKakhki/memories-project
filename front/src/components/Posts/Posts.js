@@ -9,6 +9,9 @@ const Posts = () => {
   const posts = useSelector((state) => state.posts);
   const classes = useStyles();
 
+   if (!posts) {
+    return <CircularProgress />;
+  }
   return (
    (posts && posts.length !==0) ? <CircularProgress /> : (
       <Grid className={classes.container} container alignItems="stretch" spacing={3}>

@@ -5,7 +5,6 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 
 import postRoutes from './routes/posts.js';
-h
 var app = express();
 
 
