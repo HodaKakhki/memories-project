@@ -14,6 +14,7 @@ import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import moment from "moment";
 
 function Post({post}) {
+  console.log('Inside the posts--->>>>>', post)
   const classes = useStyles();
   return (
     <Card className={classes.card}>
@@ -35,15 +36,16 @@ function Post({post}) {
           size="small"
           onClick={() => {}}
         >
-          <MoreHorizIcon fontSize="default" />
+          <MoreHorizIcon fontSize="medium" />
         </Button>
       </div>
 
-      <div className={classes.details}>
+      {/* tags doesn't exist inside post */}
+      {/* <div className={classes.details}>
         <Typography variant="body2" color="textSecondary">
-          {post.tags.map((tag) => `#${tag} `)}
+        {post.tags.map((tag) => `#${tag} `)}
         </Typography>
-      </div>
+      </div> */}
 
       <CardContent>
         <Typography
